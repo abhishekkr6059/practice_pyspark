@@ -9,14 +9,12 @@ from pyspark.sql.functions import *
 
 # COMMAND ----------
 
-# Define the schema for the Customer table
 schema = StructType([
 StructField("id", IntegerType(), True),
 StructField("name", StringType(), True),
 StructField("referee_id", IntegerType(), True)
 ])
  
-# Create an df with the data
 data = [
 (1, 'Will', None),
 (2, 'Jane', None),

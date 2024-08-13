@@ -10,14 +10,12 @@ from pyspark.sql.functions import *
 
 # COMMAND ----------
 
-# Define the schema for the "Weather" table
 weather_schema = StructType([
 StructField("id", IntegerType(), True),
 StructField("recordDate", StringType(), True),
 StructField("temperature", IntegerType(), True)
 ])
  
-# Define data for the "Weather" table
 weather_data = [
 (1, '2015-01-01', 10),
 (2, '2015-01-02', 25),

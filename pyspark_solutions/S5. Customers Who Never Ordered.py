@@ -9,13 +9,11 @@ from pyspark.sql.functions import *
 
 # COMMAND ----------
 
-# Define the schema for the "Customers"
 customers_schema = StructType([
 StructField("id", IntegerType(), True),
 StructField("name", StringType(), True)
 ])
  
-# Define data for the "Customers"
 customers_data = [
 (1, 'Joe'),
 (2, 'Henry'),
@@ -23,13 +21,11 @@ customers_data = [
 (4, 'Max')
 ]
 
-# Define the schema for the "Orders"
 orders_schema = StructType([
 StructField("id", IntegerType(), True),
 StructField("customerId", IntegerType(), True)
 ])
  
-# Define data for the "Orders"
 orders_data = [
 (1, 3),
 (2, 1)

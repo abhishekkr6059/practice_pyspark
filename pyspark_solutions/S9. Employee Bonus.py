@@ -10,7 +10,6 @@ from pyspark.sql.functions import *
 
 # COMMAND ----------
 
-# Define the schema for the "Employee"
 employee_schema = StructType([
  StructField("empId", IntegerType(), True),
  StructField("name", StringType(), True),
@@ -18,7 +17,6 @@ employee_schema = StructType([
  StructField("salary", IntegerType(), True)
 ])
  
-# Define data for the "Employee"
 employee_data = [
  (3, 'Brad', None, 4000),
  (1, 'John', 3, 1000),
@@ -26,13 +24,11 @@ employee_data = [
  (4, 'Thomas', 3, 4000)
 ]
  
-# Define the schema for the "Bonus"
 bonus_schema = StructType([
  StructField("empId", IntegerType(), True),
  StructField("bonus", IntegerType(), True)
 ])
  
-# Define data for the "Bonus"
 bonus_data = [
  (2, 500),
  (4, 2000)

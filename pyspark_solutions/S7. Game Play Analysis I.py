@@ -10,7 +10,6 @@ from pyspark.sql.window import *
 
 # COMMAND ----------
 
-# Define the schema for the "Activity"
 activity_schema = StructType([
  StructField("player_id", IntegerType(), True),
  StructField("device_id", IntegerType(), True),
@@ -18,7 +17,6 @@ activity_schema = StructType([
  StructField("games_played", IntegerType(), True)
 ])
  
-# Define data for the "Activity"
 activity_data = [
  (1, 2, '2016-03-01', 5),
  (1, 2, '2016-05-02', 6),

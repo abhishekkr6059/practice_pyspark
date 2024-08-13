@@ -9,14 +9,12 @@ from pyspark.sql.functions import *
 
 # COMMAND ----------
 
-# Define schema for the 'persons' table
 persons_schema = StructType([
 StructField("personId", IntegerType(), True),
 StructField("lastName", StringType(), True),
 StructField("firstName", StringType(), True)
 ])
  
-# Define schema for the 'addresses' table
 addresses_schema = StructType([
 StructField("addressId", IntegerType(), True),
 StructField("personId", IntegerType(), True),
@@ -24,13 +22,11 @@ StructField("city", StringType(), True),
 StructField("state", StringType(), True)
 ])
  
-# Define data for the 'persons' table
 persons_data = [
 (1, 'Wang', 'Allen'),
 (2, 'Alice', 'Bob')
 ]
  
-# Define data for the 'addresses' table
 addresses_data = [
 (1, 2, 'New York City', 'New York'),
 (2, 3, 'Leetcode', 'California')
