@@ -5,6 +5,11 @@
 
 # COMMAND ----------
 
+from pyspark.sql.types import *
+from pyspark.sql.functions import *
+
+# COMMAND ----------
+
 schema=StructType([
 StructField('AD_ID',IntegerType(),True)
 ,StructField('USER_ID',IntegerType(),True)

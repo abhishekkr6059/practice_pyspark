@@ -4,6 +4,11 @@
 
 # COMMAND ----------
 
+from pyspark.sql.types import *
+from pyspark.sql.functions import *
+
+# COMMAND ----------
+
 # Define schema for the 'persons' table
 persons_schema = StructType([
 StructField("personId", IntegerType(), True),
