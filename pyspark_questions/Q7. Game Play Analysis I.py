@@ -40,3 +40,7 @@ display(activity_df)
 # MAGIC |1|2016-03-01|
 # MAGIC |2|2017-06-25|
 # MAGIC |3|2016-03-02|
+
+# COMMAND ----------
+
+

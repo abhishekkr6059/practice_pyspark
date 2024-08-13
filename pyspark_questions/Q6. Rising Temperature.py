@@ -38,3 +38,7 @@ display(weather_df)
 # MAGIC |--|----------|
 # MAGIC |2|2015-01-02|
 # MAGIC |4|2015-01-04|
+
+# COMMAND ----------
+
+

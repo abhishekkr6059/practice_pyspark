@@ -40,3 +40,7 @@ display(activity_df)
 # MAGIC |1|2|
 # MAGIC |2|3|
 # MAGIC |3|1|
+
+# COMMAND ----------
+
+
